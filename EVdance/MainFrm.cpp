@@ -622,7 +622,6 @@ Font    Vladimir Script || Century Gothic||   Copperplate Gothic Bold ||
 	obj->SetBkColor(9106685);
 	*/
 	CString strdsd;
-	CString strdsd;
 }
 
 void CMainFrame::OnButtonActionBet()
