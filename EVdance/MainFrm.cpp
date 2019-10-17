@@ -620,6 +620,7 @@ Font    Vladimir Script || Century Gothic||   Copperplate Gothic Bold ||
 	obj->SetTitle(_T("CHECK"));
 	obj->SetFont(_T("Century Gothic"));
 	obj->SetBkColor(9106685);
+	CString strdsd;
 }
 
 void CMainFrame::OnButtonActionBet()
