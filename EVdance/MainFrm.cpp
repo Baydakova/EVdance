@@ -614,12 +614,12 @@ Font    Vladimir Script || Century Gothic||   Copperplate Gothic Bold ||
 {
 	CUMLEntityClass* obj = new CUMLEntityClass;
 	CUMLEditor      m_editor;
-	/*m_editor.GetActiveWindow();
+	m_editor.GetActiveWindow();
 	m_editor.StartDrawingObject(obj);
 	m_editor.StartDrawingObject(obj);
 	obj->SetTitle(_T("CHECK"));
 	obj->SetFont(_T("Century Gothic"));
-	obj->SetBkColor(9106685);*/
+	obj->SetBkColor(9106685);
 }
 
 void CMainFrame::OnButtonActionBet()
