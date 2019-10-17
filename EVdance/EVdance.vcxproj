@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{573F6FEE-966A-4BD4-A5F5-67F57A791DED}</ProjectGuid>
+    <RootNamespace>EVdance</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddParameterDialog.h" />
+    <ClInclude Include="Attribute.h" />
+    <ClInclude Include="AttributeContainer.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ClassAttributePropertyDialog.h" />
+    <ClInclude Include="ClassDisplayPropertyDialog.h" />
+    <ClInclude Include="ClassOperationPropertyDialog.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="DiagramEditor\DiagramClipboardHandler.h" />
+    <ClInclude Include="DiagramEditor\DiagramEditor.h" />
+    <ClInclude Include="DiagramEditor\DiagramEntity.h" />
+    <ClInclude Include="DiagramEditor\DiagramEntityContainer.h" />
+    <ClInclude Include="DiagramEditor\DiagramLine.h" />
+    <ClInclude Include="DiagramEditor\DiagramMenu.h" />
+    <ClInclude Include="DiagramEditor\DiagramPropertyDlg.h" />
+    <ClInclude Include="DiagramEditor\GroupFactory.h" />
+    <ClInclude Include="DiagramEditor\Tokenizer.h" />
+    <ClInclude Include="DiagramEditor\UndoItem.h" />
+    <ClInclude Include="DiskObject\DiskObject.h" />
+    <ClInclude Include="EVdance.h" />
+    <ClInclude Include="EVdanceDoc.h" />
+    <ClInclude Include="EVdanceView.h" />
+    <ClInclude Include="ExListBox.h" />
+    <ClInclude Include="ExportDialog.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="GetterSetterDialog.h" />
+    <ClInclude Include="LinkFactory.h" />
+    <ClInclude Include="LinkSettings.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Operation.h" />
+    <ClInclude Include="OperationContainer.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="ParameterContainer.h" />
+    <ClInclude Include="Property.h" />
+    <ClInclude Include="PropertyContainer.h" />
+    <ClInclude Include="PropertyListEditorDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StringHelpers.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TextFile\TextFile.h" />
+    <ClInclude Include="UMLClassPropertyDialog.h" />
+    <ClInclude Include="UMLClipboardHandler.h" />
+    <ClInclude Include="UMLControlFactory.h" />
+    <ClInclude Include="UMLEditor.h" />
+    <ClInclude Include="UMLEditorPropertyDialog.h" />
+    <ClInclude Include="UMLEntity.h" />
+    <ClInclude Include="UMLEntityClass.h" />
+    <ClInclude Include="UMLEntityClassTemplate.h" />
+    <ClInclude Include="UMLEntityContainer.h" />
+    <ClInclude Include="UMLEntityDummy.h" />
+    <ClInclude Include="UMLEntityInterface.h" />
+    <ClInclude Include="UMLEntityLabel.h" />
+    <ClInclude Include="UMLEntityNote.h" />
+    <ClInclude Include="UMLEntityPackage.h" />
+    <ClInclude Include="UMLInterfacePropertyDialog.h" />
+    <ClInclude Include="UMLLabelPropertyDialog.h" />
+    <ClInclude Include="UMLLineSegment.h" />
+    <ClInclude Include="UMLLinkPropertyDialog.h" />
+    <ClInclude Include="UMLMenu.h" />
+    <ClInclude Include="umlnotepropertydialog.h" />
+    <ClInclude Include="umlpackagepropertydialog.h" />
+    <ClInclude Include="UMLUndoItem.h" />
+    <ClInclude Include="ViewTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AddParameterDialog.cpp" />
+    <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="AttributeContainer.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ClassAttributePropertyDialog.cpp" />
+    <ClCompile Include="ClassDisplayPropertyDialog.cpp" />
+    <ClCompile Include="ClassOperationPropertyDialog.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="DiagramEditor\DiagramClipboardHandler.cpp" />
+    <ClCompile Include="DiagramEditor\DiagramEditor.cpp" />
+    <ClCompile Include="DiagramEditor\DiagramEntity.cpp" />
+    <ClCompile Include="DiagramEditor\DiagramEntityContainer.cpp" />
+    <ClCompile Include="DiagramEditor\DiagramLine.cpp" />
+    <ClCompile Include="DiagramEditor\DiagramMenu.cpp" />
+    <ClCompile Include="DiagramEditor\DiagramPropertyDlg.cpp" />
+    <ClCompile Include="DiagramEditor\GroupFactory.cpp" />
+    <ClCompile Include="DiagramEditor\Tokenizer.cpp" />
+    <ClCompile Include="DiagramEditor\UndoItem.cpp" />
+    <ClCompile Include="DiskObject\DiskObject.cpp" />
+    <ClCompile Include="EVdance.cpp" />
+    <ClCompile Include="EVdanceDoc.cpp" />
+    <ClCompile Include="EVdanceView.cpp" />
+    <ClCompile Include="ExListBox.cpp" />
+    <ClCompile Include="ExportDialog.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="GetterSetterDialog.cpp" />
+    <ClCompile Include="LinkFactory.cpp" />
+    <ClCompile Include="LinkSettings.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Operation.cpp" />
+    <ClCompile Include="OperationContainer.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="Parameter.cpp" />
+    <ClCompile Include="ParameterContainer.cpp" />
+    <ClCompile Include="Property.cpp" />
+    <ClCompile Include="PropertyContainer.cpp" />
+    <ClCompile Include="PropertyListEditorDialog.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringHelpers.cpp" />
+    <ClCompile Include="TextFile\TextFile.cpp" />
+    <ClCompile Include="UMLClassPropertyDialog.cpp" />
+    <ClCompile Include="UMLClipboardHandler.cpp" />
+    <ClCompile Include="UMLControlFactory.cpp" />
+    <ClCompile Include="UMLEditor.cpp" />
+    <ClCompile Include="UMLEditorPropertyDialog.cpp" />
+    <ClCompile Include="UMLEntity.cpp" />
+    <ClCompile Include="UMLEntityClass.cpp" />
+    <ClCompile Include="UMLEntityClassTemplate.cpp" />
+    <ClCompile Include="UMLEntityContainer.cpp" />
+    <ClCompile Include="UMLEntityDummy.cpp" />
+    <ClCompile Include="UMLEntityInterface.cpp" />
+    <ClCompile Include="UMLEntityLabel.cpp" />
+    <ClCompile Include="UMLEntityNote.cpp" />
+    <ClCompile Include="UMLEntityPackage.cpp" />
+    <ClCompile Include="UMLInterfacePropertyDialog.cpp" />
+    <ClCompile Include="UMLLabelPropertyDialog.cpp" />
+    <ClCompile Include="UMLLineSegment.cpp" />
+    <ClCompile Include="UMLLinkPropertyDialog.cpp" />
+    <ClCompile Include="UMLMenu.cpp" />
+    <ClCompile Include="UMLNotePropertyDialog.cpp" />
+    <ClCompile Include="UMLPackagePropertyDialog.cpp" />
+    <ClCompile Include="UMLTemplatePropertyDialog.cpp" />
+    <ClCompile Include="UMLUndoItem.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EVdance.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\buttons.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\EVdance.ico" />
+    <Image Include="res\EVdanceDoc.ico" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\filelarge.bmp" />
+    <Image Include="res\filesmall.bmp" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\UMLEditorDemoDoc.ico" />
+    <Image Include="res\up.ico" />
+    <Image Include="res\writelarge.bmp" />
+    <Image Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\attach.cur" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\draw.cur" />
+    <None Include="res\EVdance.rc2" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\up.cur" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
